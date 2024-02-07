@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script src="client.js"></script>
+    <title>Voting App</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="logo.png" alt="st_logo">
+        </div>
+        <div class="title">
+            <strong>
+                <p id="head">Science Expo
+                <p id="sub">~By Science and IT club</p>
+                </p>
+            </strong>
+        </div>
+        <div>
+            <img class="logo" src="sci.png" alt="sciit_logo">
+        </div>
+    </header>
+
+    <hr>
+    <main>
+
+        <div class="a_vote" onclick="vote(1)">
+            <div class="img"><img src="sci.png" alt="college logo"></div>
+            <div class="name">
+                <p class="cname">
+                    Candidate 1<br>
+                </p>
+                <p class="sno">Stall no: 1 <br>
+                </p>
+
+                <p class="vote">Vote <br>
+                </p>
+            </div>
+        </div>
+        <div class="a_vote">
+            <p>
+                Mahan siddhartha high school (+2)<br>
+                Stall no: 2<br>
+            </p>
+            <button onclick="vote(2)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 3 <br>
+            </p>
+            <button onclick="vote(3)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 4<br>
+            </p>
+            <button onclick="vote(4)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 5 <br>
+            </p>
+            <button onclick="vote(5)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 6<br>
+            </p>
+            <button onclick="vote(6)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 7<br>
+            </p>
+            <button onclick="vote(7)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 8<br>
+            </p>
+            <button onclick="vote(8)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 9<br>
+            </p>
+            <button onclick="vote(9)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 10<br>
+            </p>
+            <button onclick="vote(10)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 11<br>
+            </p>
+            <button onclick="vote(11)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 12<br>
+            </p>
+            <button onclick="vote(12)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 13 <br>
+            </p>
+            <button onclick="vote(13)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 14<br>
+            </p>
+            <button onclick="vote(14)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 15<br>
+            </p>
+            <button onclick="vote(15)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 16<br>
+            </p>
+            <button onclick="vote(16)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 17<br>
+            </p>
+            <button onclick="vote(17)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 18<br>
+            </p>
+            <button onclick="vote(18)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 19 <br>
+            </p>
+            <button onclick="vote(19)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 20<br>
+            </p>
+            <button onclick="vote(20)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 21 <br>
+            </p>
+            <button onclick="vote(21)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 22<br>
+            </p>
+            <button onclick="vote(22)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 23<br>
+            </p>
+            <button onclick="vote(23)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 24<br>
+            </p>
+            <button onclick="vote(24)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 1<br>
+                Stall no: 25<br>
+            </p>
+            <button onclick="vote(25)">Vote</button>
+        </div>
+        <div class="a_vote">
+            <p>
+                Candidate 2<br>
+                Stall no: 26<br>
+            </p>
+            <button onclick="vote(26)">Vote</button>
+        </div>
+    </main>
+    <div id="overlay"></div>
+    <div id="modal">
+        <h1>Thank you for voting
+            <hr color="black">
+        </h1>
+        <button onclick="toggleModal()">Close</button>
+    </div>
+
+    <script>
+        function vote(candidateIndex) {
+            socket.emit('vote', candidateIndex);
+            toggleModal();
+        }
+        function toggleModal() {
+            var overlay = document.getElementById('overlay');
+            var modal = document.getElementById('modal');
+            overlay.style.display = (overlay.style.display === 'none' || overlay.style.display === '') ? 'block' : 'none';
+            modal.style.display = (modal.style.display === 'none' || modal.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+
+#head{
+    font-size: 2em;
+    color: #f1a20f;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+#sub{
+    color: #0B7979;
+    padding: 0;
+    margin: 0;
+}
+.logo{
+    height: 5rem;
+    width: auto;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    /* gap: 25rem; */
+    justify-content: space-between;
+}
+header p{
+    font-family: sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+        
+}
+main > div{
+    display: flex;
+    flex-direction: row;
+    height: 2.3rem;
+    border: solid;
+    justify-content: space-between;
+    
+}
+
+main > div > div{
+    height: 3rem;
+    color: #0B7979;
+}
+.name{
+    width: 25rem;
+    text-wrap: wrap;
+}
+.stall_no{
+    width: 7rem;
+}
+
+.rank, .vote{
+    width: 5rem;
+}
